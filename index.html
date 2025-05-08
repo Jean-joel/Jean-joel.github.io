@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Kanda Akichy Jean Joel</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="no-scroll">
+
+  <!-- Loader -->
+<div id="loader"></div>
+
+<!-- Header avec effet de frappe -->
+
+<header class="hero">
+  <img src="assets/photo.png" class="profile-pic" alt="Ma photo de profil" />
+  <h1 class="glow">👨‍💻 KANDA AKICHY JEAN JOEL</h1>
+  <p>🚀 Formateur _ Python - JS - C# <br>
+     Développeur _ Fullstack _  Python/JS/C# <br> Créateur _ de _ jeux _ éducatifs <br> Consultant _ IA _ robotique</p>
+  <nav>
+    <ul>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#formations">Formations</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="apropos" class="section hidden">
+  <h2>🧑‍🎓 À propos</h2>
+  <p>Professionnel passionné de technologie, je cumule plus de 5 ans d'expérience dans le développement d'applications web/mobile, l'enseignement de l'IA, la conception de jeux éducatifs, et la consultance technique. Je forme les nouvelles générations à créer des solutions intelligentes adaptées à leur environnement.</p>
+</section>
+
+<section id="competences" class="section hidden">
+  <h2>🛠️ Compétences</h2>
+  <div class="grid">
+    <div class="card" onclick="openModal('comp1')">Python -🌐 Web(Django-Flask-Fastapi) -💻 tkinter -🕹️ Pygame</div>
+    <div class="card" onclick="openModal('comp2')">HTML-CSS-JS (Reactjs)</div>
+    <div class="card" onclick="openModal('comp3')">C# -📱mobile (Maui.net) -🕹️ Monogame</div>
+    <div class="card" onclick="openModal('comp4')">IA - (TensorFlow/Scikit-learn/Pytorch) Vision par ordinateur</div>
+    <div class="card" onclick="openModal('comp5')">Robotique - (Raspberry_pi/Arduino)</div>
+    <div class="card" onclick="openModal('comp6')">Enseignement (Mathematiques/physiques)</div>
+    <div class="card" onclick="openModal('comp7')">Game Designer -Gimp/Blender</div>
+  </div>
+</section>
+
+<section id="services" class="section hidden">
+  <h2>🧰 Services</h2>
+  <div class="grid">
+    <div class="card" onclick="openModal('serv1')">Formations IA & Développement web/mobile/desktop</div>
+    <div class="card" onclick="openModal('serv2')">Création de jeux éducatifs sur mesure</div>
+    <div class="card" onclick="openModal('serv3')">Consultance IA & Projets numériques/robotique</div>
+    <div class="card" onclick="openModal('serv4')">Développement Web & Mobile sur mesure</div>
+    <div class="card" onclick="openModal('serv5')">Enseignement de Mathematiques & algorithme et physiques</div>
+  </div>
+</section>
+
+<section id="formations" class="section hidden">
+  <h2>🎓 Formations</h2>
+  <div class="grid">
+    <div class="card" onclick="openModal('form1')">IGS - Data IA</div>
+    <div class="card" onclick="openModal('form2')">Université FHB - Maîtrise en Gestion</div>
+    <div class="card" onclick="openModal('form3')">Lycée Morderne d'Adzopé - BAC SERIE C </div>
+  </div>
+</section>
+
+<section id="projets" class="section hidden">
+  <h2>📂 Projets Réalisés</h2>
+  <div class="grid">
+    <div class="card" onclick="openModal('proj1')">🧠 Bibiothèque python</div>
+    <div class="card" onclick="openModal('proj2')">📲 App QR Mobile/ Gestion d'utilisateurs</div>
+    <div class="card" onclick="openModal('proj3')">🎮 Jeux éducatifs Make 24 / Blokus</div>
+    <div class="card" onclick="openModal('proj4')">📈 Tableau de bord IA & Web API</div>
+    <div class="card" onclick="openModal('proj5')">🤖 Robot intelligent</div>
+  </div>
+</section>
+
+<section id="contact" class="section hidden">
+  <h2>📞 Contact</h2>
+  <p>📧 Email : <a href="mailto:kandajoel5@gmail.com">kandajoel5@gmail.com</a></p>
+  <p>📱 Téléphone : <a href="tel:+225505267960">0505267960</a> / <a href="tel:+225708817918">0708817918</a></p>
+  <p>📍 Adresse : Cocody / Riviera-Anono</p>
+  <p>Une mise à jour des images des realisation sera bientôt disponible</p>
+  <form action="mailto:kandajoel5@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="Nom" placeholder="Votre nom" required />
+    <input type="email" name="Email" placeholder="Votre email" required />
+    <textarea name="Message" placeholder="Votre message" required></textarea>
+    <button type="submit">📤 Envoyer le message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 🧠 Joel Akichy – Portfolio professionnel et interactif propulsé par l’IA et la passion.</p>
+</footer>
+
+<!-- Placeholder for modals: they will be generated dynamically -->
+<div id="modals-container"></div>
+<div id="comp1" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('comp1')">&times;</span><h2>Python - Developpement web/Desktop</h2><p>Je maitrise assez bien le Langage principal utilisé pour l’IA, l’automatisation  et le traitement de données et aussi  Flask et FastApi pour le deploiement des Api , Django pour les sites robuste. Je realise aussi des applications de bureau et des jeux 2d avec pygame dédié à l'apprentissage et deployer principalement sur des systemes embarqués</p></div></div>
+<div id="comp2" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('comp2')">&times;</span><h2>HTML - CSS3 - JavaScript</h2><p>Utilisé pour créer des interfaces utilisateur interactives et dynamiques en frontend.</p></div></div>
+<div id="comp3" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('comp3')">&times;</span><h2>C# - Developpement mobile/Desktop</h2><p>Langage utilisé dans mes projets de jeux éducatifs et amusant (MonoGame) et applications mobiles (Maui.net).</p></div></div>
+<div id="comp4" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('comp4')">&times;</span><h2>IA - Entrainement et deploiement</h2><p>J'entraine des modèles à l'aide du machine learning et du deep Learning et aussi en utlisant des modèles préentrainés, je deploies des Ia surtout pour les systèmes embarqués</p></div></div>
+<div id="comp5" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('comp5')">&times;</span><h2>Robotique </h2><p>J'ai une bonne connaissance des cartes arduino et raspberry en ce qui concerne le montage de robot et l'électronique qui va avec</p></div></div>
+<div id="comp6" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('comp6')">&times;</span><h2>Enseignement</h2><p>J'encadre les élèves en mathematiques et physiques</p></div></div>
+<div id="comp7" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('comp7')">&times;</span><h2>Modelisation 3d</h2><p>Pour les jeux ou des outils 3d , je modelise avec blender pour rendre vivant la pensée. Mais bien avant cela je prend le temps de faire les sprites et les textures</p></div></div>
+
+
+<div id="serv1" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('serv1')">&times;</span><h2>Formation IA & Developpement d'application web/mobile et desktop</h2><p>Formations en présentiel et en ligne pour universités, écoles et espaces tech.</p></div></div>
+<div id="serv4" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('serv4')">&times;</span><h2>Applications Mobiles</h2><p>Développement d’applications web (simple comme robuste sans wordpress) Android/iOS performantes et IA intégrées et aussi Desktop.</p></div></div>
+<div id="serv2" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('serv2')">&times;</span><h2>Jeux éducatifs</h2><p>Création de jeux ludo-éducatifs avec logique, réflexion, mathématiques. et aussi jeux-videos sur mesure à la demande</p></div></div>
+<div id="serv3" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('serv3')">&times;</span><h2>Consultance IA & projet numeriques et embarqué</h2><p>Possibilité d'intervenir en tant que consultant sur un projet numerique ou robotique demandant l'avis ou l'expertise d'un professionnel de l'IA</p></div></div>
+<div id="serv5" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('serv5')">&times;</span><h2>Encadrement et renforcement </h2><p>Formation sur mesure pour particulier souhaitant maitriser les mathematiques (statistiqueq, probabilité,algorithme ...) et aussi de la physique</p></div></div>
+
+<div id="form1" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('form1')">&times;</span><h2>IGS</h2><p>Formation complète en IA, Python, data science, Flask, projets pratiques.</p></div></div>
+<div id="form2" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('form2')">&times;</span><h2>Université FHB</h2><p>Maîtrise en économie et gestion d'entreprise.</p></div></div>
+<div id="form3" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('form3')">&times;</span><h2>Baccalauréat</h2><p>Titulaire d'un bac scientifique dépuis 2008.</p></div></div>
+
+<div id="proj1" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proj1')">&times;</span><h2>Bibliothèque</h2><p>Realisation de bibliothèque python pour facilité le developpent des applications.</p></div></div>
+<div id="proj2" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proj2')">&times;</span><h2>Applications Mobiles</h2><p>Realisation d’applications web, Android/iOS et Desktop.</p></div></div>
+<div id="proj3" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proj3')">&times;</span><h2>Jeux éducatifs</h2><p>Création de jeux ludo-éducatifs avec logique, réflexion, mathématiques. et aussi jeux-videos sur mesure à la demande</p></div></div>
+<div id="proj4" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proj4')">&times;</span><h2>API</h2><p>Realisation professionnel d'api rest</p></div></div>
+<div id="proj5" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proj5')">&times;</span><h2>Robotique </h2><p>Realisation de Robot personnel avec raspberry pi</p></div></div>
+
+</body>
+</html>
