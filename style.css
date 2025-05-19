@@ -185,3 +185,59 @@ footer {
   cursor: pointer;
   color: #0ff;
 }
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.carousel-container img {
+  max-width: 100%;
+  max-height: 50vh;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #0ff;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+.carousel-btn:hover {
+  text-shadow: 0 0 10px #0ff;
+}
+
+.btn-voir {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #0ff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+}
+.btn-voir:hover {
+  background: #00cccc;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00eeee, 0 0 25px #00eeee;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.carousel-container video {
+  max-width: 90%;
+  max-height: 50vh;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0ff;
+}

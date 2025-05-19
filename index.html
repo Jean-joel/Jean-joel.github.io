@@ -15,7 +15,7 @@
 <!-- Header avec effet de frappe -->
 
 <header class="hero">
-  <img src="assets/photo.png" class="profile-pic" alt="Ma photo de profil" />
+  <img src="assets/images/photo.png" class="profile-pic" alt="Ma photo de profil" />
   <h1 class="glow">👨‍💻 KANDA AKICHY JEAN JOEL</h1>
   <p>🚀 Formateur _ Python - JS - C# <br>
      Développeur _ Fullstack _  Python/JS/C# <br> Créateur _ de _ jeux _ éducatifs <br> Consultant _ IA _ robotique</p>
@@ -77,6 +77,7 @@
     <div class="card" onclick="openModal('proj3')">🎮 Jeux éducatifs Make 24 / Blokus</div>
     <div class="card" onclick="openModal('proj4')">📈 Tableau de bord IA & Web API</div>
     <div class="card" onclick="openModal('proj5')">🤖 Robot intelligent</div>
+    <div class="card" onclick="openModal('proj6')">✍️ Design et modelisation 3d</div>
   </div>
 </section>
 
@@ -124,6 +125,43 @@
 <div id="proj3" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proj3')">&times;</span><h2>Jeux éducatifs</h2><p>Création de jeux ludo-éducatifs avec logique, réflexion, mathématiques. et aussi jeux-videos sur mesure à la demande</p></div></div>
 <div id="proj4" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proj4')">&times;</span><h2>API</h2><p>Realisation professionnel d'api rest</p></div></div>
 <div id="proj5" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('proj5')">&times;</span><h2>Robotique </h2><p>Realisation de Robot personnel avec raspberry pi</p></div></div>
+<div id="proj6" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('proj6')">&times;</span>
+    <h2>Design et modelisation </h2>
+    <p>Je realise moi même du debut à la fin mes propre modèles , mes sprites</p>
+    <button class="btn-voir" onclick="openModal('proj6-r')"> 👁️voir</button>
+    <button class="btn-voir" onclick="openModal('proj6-v')">▶️ Voir animation</button>
+  </div>
+</div>
+
+
+<div id="proj6-r" class="modal">
+  <div class="modal-content carousel">
+    <span class="close" onclick="closeCarouselModal()">&times;</span>
+    <h2>🤖 Robot intelligent – Galerie</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="prevSlide()">⬅️</button>
+      <img id="carouselImage" src="assets/images/rendus/bot22.png" alt="Rendu du projet" />
+      <button class="carousel-btn right" onclick="nextSlide()">➡️</button>
+    </div>
+  </div>
+</div>
+<!-- MODAL CARROUSEL VIDÉO -->
+<div id="proj6-v" class="modal">
+  <div class="modal-content carousel">
+    <span class="close" onclick="closeVideoCarouselModal()">&times;</span>
+    <h2>🎬 Animations de démonstration</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="prevVideo()">⬅️</button>
+      <video id="carouselVideo" controls autoplay muted>
+        <source src="assets/animation/english.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de cette vidéo.
+      </video>
+      <button class="carousel-btn right" onclick="nextVideo()">➡️</button>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
